@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../image/iconoCoral.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&display=swap" rel="stylesheet"> <!-- Fuente de titulos y subt -->
+    <!-- Link de abajo es de cdnjs "font-awesome" -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CoralCity</title>
+</head>
+<body class="fondoReservacion">
+     <header>
+        <div class="encabezado">
+            <img class="logo" src="../image/logoipsum-292.svg" alt=""> 
+            <h2 class="nombreAcuario">CoralCity</h2>
+        </div>
+            <nav>
+                <a href="../index.html">Inicio</a>
+                <a href="informacion.html">Informacion</a>
+                <a href="eventos.html">Eventos</a>
+                <a href="#">Reservacion</a>
+                <a href="faq.html">FAQ</a>
+            </nav>   
+    </header>
+    <div class="tituloFormulario"> 
+        <h1>Reserva una fecha</h1>
+    </div>
+    <main>
+        <section>
+            <form action=""> <!-- Con form se crea el formulario -->
+                    <legend class="espacioFormulario">
+                        Haz tu reservación!
+                    </legend>
+                    <div class="espacioFormulario">
+                        <label for="nombre">Nombre</label>
+                        <input class="input" type="text" name="nombre">
+                    </div>
+                    <div class="espacioFormulario">
+                        <label for="apellido">Apellido</label>
+                        <input class="input" type="text" name="apellido">
+                    </div>
+                    <div class="espacioFormulario">
+                        <label for="correo">Correo electronico</label>
+                        <input class="input" type="text" name="correo">
+                    </div>
+                    <div class="espacioFormulario">
+                        <label for="boletos">Num. Boletos</label>
+                        <input class="input" type="number" name="boletos">
+                    </div>
+                    <div class="espacioFormulario">
+                        <label for="fecha">Aparta tu fecha</label>
+                        <input class="input" type="date" name="fecha">
+                    </div>
+                    <div class="espacioFormulario">
+                        <button class="input">Pagar</button>
+                    </div>
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+            <div>¡Visítanos!</div>
+        <div>
+            <a class="icono" href=""><i class="fa-brands fa-facebook"></i></a>
+            <a class="icono" href=""><i class="fa-brands fa-instagram"></i></a>
+            <a class="icono" href=""><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

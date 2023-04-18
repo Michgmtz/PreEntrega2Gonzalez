@@ -1,0 +1,264 @@
+*{  /* reset css */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Deja de sumar los bordes internos y externos */
+}
+
+/* Diseño de la pagina index */
+.grid_Container{
+    display: grid;
+    grid-template-rows: 70px 1fr auto auto 70px;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+    "encabezado encabezado"
+    "texto texto"
+    "tarjeta1 tarjeta2"
+    "tarjeta3 tarjeta4"
+    "Footer Footer" 
+    ;
+}
+
+.grid_Footer{
+    grid-area: Footer;
+}
+
+.grid_Encabezado{
+grid-area: encabezado;
+}
+
+.grid_Tarjeta1{
+grid-area: tarjeta1;
+}
+
+.grid_Tarjeta2{
+grid-area: tarjeta2;
+}
+
+.grid_Tarjeta3{
+grid-area: tarjeta3;
+}
+
+.grid_Tarjeta4{
+grid-area: tarjeta4;
+}
+.grid_Texto{
+    grid-area: texto;
+
+}
+
+header{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: rgb(82, 134, 210);
+}
+
+footer{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: rgb(82, 134, 210);
+    bottom: 0;
+}
+
+.icono{
+    padding-right: 10px;
+}
+
+.encabezado{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    height: 40px;
+    margin-right: 10px;
+}
+
+body{
+    font-family: sans-serif; 
+    ;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 300%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+section article h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+section article p{
+    margin-bottom: 1%;
+}
+
+.imgs{
+    width: 300px;
+    margin: 0 15px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.todasImagenes{
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px ;/* Es para agregar una sombra, un cuadro, boton, etc... */
+    /* SINTAXIS: "horizontal offset" "vertical offset" "blur radius" "spread radius" "color"; */
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px;
+    margin-bottom: 150px; /* Esto fue para bajar el footer NO SE COMO SE DEBE HACER  */
+    margin-top: 5%;
+
+}
+
+.tarjeta h2{
+    font-size: 18px;
+}
+
+/* Diseño de la pagina reservacion */
+.fondoReservacion{
+    background-image:url(../image/imagenPrincipal.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+form{
+    color: white;
+    background-color: rgb(38, 5, 70);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 300px;
+    margin-bottom: 55px;
+}
+
+.tituloFormulario{
+    display: flex;  /* Propiedad que activa el modelo de caja flexible */
+    justify-content: center;
+    color: white;
+    margin: 5%;
+}
+
+.espacioFormulario{
+    margin: 10px;
+}
+
+.input{
+    display: block;
+    outline: none;
+    padding: 5px;
+    border: none;
+    width: 240px;
+    color: black;
+    background-color: white;
+}
+
+
+
+/* Diseño de la pagina FAQ */
+details{
+    width: 400px;
+    background-color: rgb(223, 220, 226);
+    border-radius: 6px;
+    margin: .5rem;
+    padding: .9rem;
+    cursor: pointer; /*Para que al usuario le aparezca la manita de hacer clic  */
+}
+ 
+.parrafo{
+    margin-left: .5rem;
+    margin-bottom: 1rem;
+}
+
+.contenedor{
+    display: flex;
+    
+}
+
+.imagenPregunta{
+    margin-left: 20%;
+    padding-bottom: 50px;
+}
+
+summary{
+    padding: 1%;
+}
+
+.noPuntos{
+    list-style: none;
+}
+
+/* Diseño de la pagina informacion*/
+.imgFondo{
+    background-image: url(../image/imgFondo.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.text{
+    background-color: rgb(176, 191, 237);
+    margin: 2rem auto;
+    height: 50%;
+    width: 30%;
+    text-align: center;
+}
+
+
+
+
+/* Diseño de la pagina eventos */
+.formatoParrafo{
+    margin-left: 10px;
+    padding: 10px;
+    
+
+}
+
+.tImagen{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 30px;
+    object-fit: cover;/* La imagen va a ocupar todo el ancho y alto anteriormente especificado sin distorcionarse */
+    margin: 10px;
+    margin-bottom: 40px;
+}
+
+.divPrincipal{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Para que se ajusten varios elementos en una fila */
+    max-width: 1000px;
+    margin: auto;
+}
