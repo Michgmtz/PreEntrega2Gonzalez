@@ -129,7 +129,7 @@ section article p{
     }
 
     .enlaces{
-     display: block;
+     display: flex;
      font-size: small;  
      text-align: end; 
      margin: 5px;
@@ -213,7 +213,26 @@ form{
     color: black;
     background-color: white;
 }
+.footerReservacion{
+    margin-top: 100px;
+}
 
+@media (max-width: 480px){
+    .tituloFormulario{
+        text-align: center;
+    }
+
+    .enlaces_Reservacion{
+        display: flex;
+        font-size: small;  
+        text-align: end; 
+        margin-left: 5px;
+        padding-left: 5px;
+    }
+    .grid_Footer_Reservacion{
+        justify-items: last baseline;
+    }
+}
 
 
 /* Diseño de la pagina FAQ */
