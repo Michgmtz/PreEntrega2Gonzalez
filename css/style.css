@@ -152,6 +152,29 @@ section article p{
 }
 
 /* Diseño de la pagina reservacion */
+.grid_Container_Reservacion{
+    display: grid;
+    grid-template-rows: 70px auto 70px;
+    grid-template-columns: auto auto;
+    grid-template-areas: 
+    "header header"
+    "principal principal"
+    "pie pie"
+    ;
+}
+
+.grid_Header_Reservacion{
+    grid-area: header;
+}
+.grid_Main_Reservacion{
+    grid-area: principal;
+}
+
+.grid_Footer_Reservacion{
+    grid-area: pie;
+    
+}
+
 .fondoReservacion{
     background-image:url(../image/imagenPrincipal.jpg);
     background-repeat: no-repeat;
@@ -167,7 +190,7 @@ form{
     padding: 20px;
     margin: 0 auto;
     width: 300px;
-    margin-bottom: 55px;
+    margin-bottom: 100px;
 }
 
 .tituloFormulario{
