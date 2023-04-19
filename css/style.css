@@ -7,13 +7,12 @@
 /* Diseño de la pagina index */
 .grid_Container{
     display: grid;
-    grid-template-rows: 70px 1fr auto auto 70px;
+    grid-template-rows: 70px auto auto 70px;
     grid-template-columns: auto auto;
     grid-template-areas:
     "encabezado encabezado"
-    "texto texto"
-    "tarjeta1 tarjeta2"
-    "tarjeta3 tarjeta4"
+    "main main"
+    "main main"
     "Footer Footer" 
     ;
 }
@@ -22,28 +21,11 @@
     grid-area: Footer;
 }
 
+.grid_main{
+    grid-area: main;
+}
 .grid_Encabezado{
 grid-area: encabezado;
-}
-
-.grid_Tarjeta1{
-grid-area: tarjeta1;
-}
-
-.grid_Tarjeta2{
-grid-area: tarjeta2;
-}
-
-.grid_Tarjeta3{
-grid-area: tarjeta3;
-}
-
-.grid_Tarjeta4{
-grid-area: tarjeta4;
-}
-.grid_Texto{
-    grid-area: texto;
-
 }
 
 header{
@@ -91,6 +73,7 @@ h1{
     justify-content: center;
     margin: 10px;
     padding: 10px;
+    margin-top: 5%;
 }
 
 a{
@@ -139,6 +122,33 @@ section article p{
 
 .tarjeta h2{
     font-size: 18px;
+}
+
+@media (max-width: 480px){
+    h1{justify-self: center;
+    }
+
+    .enlaces{
+     display: block;
+     font-size: small;  
+     text-align: end; 
+     margin: 5px;
+    }
+
+    section article p{
+        margin: 1rem;
+    }
+
+    .tarjeta{
+        display: block;
+        margin-bottom: 10%;
+        margin: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .todasImagenes{
+        display: block;
+    }
 }
 
 /* Diseño de la pagina reservacion */
