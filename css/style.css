@@ -96,11 +96,9 @@ section article p{
     margin-bottom: 1%;
 }
 
-.imgs{
-    width: 300px;
-    margin: 0 15px;
-    border-radius: 10px;
-    padding: 5px;
+.tarjeta{
+    margin: 1rem; 
+    
 }
 
 .todasImagenes{
@@ -108,21 +106,7 @@ section article p{
     justify-content: center;
 }
 
-.tarjeta{
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px ;/* Es para agregar una sombra, un cuadro, boton, etc... */
-    /* SINTAXIS: "horizontal offset" "vertical offset" "blur radius" "spread radius" "color"; */
-    border-radius: 5px;
-    margin: 10px;
-    padding: 5px;
-    margin-bottom: 150px; /* Esto fue para bajar el footer NO SE COMO SE DEBE HACER  */
-    margin-top: 5%;
 
-}
-
-.tarjeta h2{
-    font-size: 18px;
-}
 
 @media (max-width: 480px){
     h1{justify-self: center;
