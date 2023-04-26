@@ -93,6 +93,7 @@ a{
 nav a{
     font-weight: 600;
     padding-right: 5px;
+    margin-left: 1px;
 }
 
 section article h2{
@@ -102,6 +103,8 @@ section article h2{
 }
 
 section article p{
+    display: flex;
+    justify-content: center;
     margin-bottom: 1%;
     margin: 5%;
 }
@@ -113,6 +116,10 @@ section article p{
     justify-content: center;
     margin: 5%;
     flex-flow: row wrap; 
+}
+
+.tarjetas{
+    padding: 2%;
 }
 
 
