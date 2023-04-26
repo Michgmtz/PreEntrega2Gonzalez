@@ -29,26 +29,33 @@ grid-area: encabezado;
 }
 
 header{
+    max-width: 100%;
     display: flex;
-    height: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
     background-color: rgb(82, 134, 210);
+    flex-flow: row wrap;
+
 }
 
 footer{
     display: flex;
     height: 100%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 1%;
     background-color: rgb(82, 134, 210);
     bottom: 0;
+    flex-flow: row wrap;
+    
 }
 
-.icono{
-    padding-right: 10px;
+.textoFooter{
+    padding: 1%;
+}
+.enlaceFooter{
+    padding: 1%;
 }
 
 .encabezado{
@@ -58,12 +65,14 @@ footer{
 
 .logo{
     height: 40px;
-    margin-right: 10px;
+    margin-right: 5%;
 }
 
 body{
     font-family: sans-serif; 
-    ;
+    
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 h1{
@@ -83,7 +92,7 @@ a{
 
 nav a{
     font-weight: 600;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
 section article h2{
@@ -94,16 +103,16 @@ section article h2{
 
 section article p{
     margin-bottom: 1%;
+    margin: 5%;
 }
 
-.tarjeta{
-    margin: 1rem; 
-    
-}
+
 
 .todasImagenes{
     display: flex;
     justify-content: center;
+    margin: 5%;
+    flex-flow: row wrap; 
 }
 
 
@@ -116,19 +125,13 @@ section article p{
      display: flex;
      font-size: small;  
      text-align: end; 
-     margin: 5px;
+     margin: 2%;
     }
 
     section article p{
-        margin: 1rem;
+        margin: 5%;
     }
 
-    .tarjeta{
-        display: block;
-        margin-bottom: 10%;
-        margin: 1rem;
-        margin-bottom: 20px;
-    }
 
     .todasImagenes{
         display: block;
