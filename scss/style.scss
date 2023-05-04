@@ -97,19 +97,20 @@ nav {
     margin-left: 1px;}
 }
 
-section article h2{
+section {
+    article{
+         h2{
     display: flex;
     justify-content: center;
-    margin-bottom: 3%;
-}
-
-section article p{
-    display: flex;
+    margin-bottom: 3%;}
+        p{
+     display: flex;
     justify-content: center;
     margin-bottom: 1%;
-    margin: 5%;
+    margin: 5%;   
+    }
+    }
 }
-
 
 
 .todasImagenes{
@@ -136,8 +137,11 @@ section article p{
      margin: 2%;
     }
 
-    section article p{
-        margin: 5%;
+    section {
+        article{ 
+            p{
+        margin: 5%;}
+            }
     }
 
 
