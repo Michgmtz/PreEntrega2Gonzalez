@@ -235,6 +235,19 @@ form{
 
 
 /* Diseño de la pagina FAQ */
+.grid_ContainerFAQ{
+    display: grid;
+    grid-template-rows:70px auto auto 70px;
+    grid-template-columns: auto auto ;
+    grid-template-areas:
+    "grid_EncabezadoFAQ grid_EncabezadoFAQ"
+    "principalFAQ principalFAQ"
+    "principalFAQ principalFAQ"
+    "grid_Footer_FAQ"
+    ;
+
+}
+
 details{
     width: 400px;
     background-color: rgb(223, 220, 226);
@@ -255,8 +268,15 @@ details{
 }
 
 .imagenPregunta{
-    margin-left: 20%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 0%;
     padding-bottom: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    width: auto;
+    object-fit: contain;
+    
 }
 
 summary{
@@ -285,10 +305,25 @@ summary{
     text-align: center;
 }
 
+    @media (max-width: 480px){
+
+    }
 
 
 
 /* Diseño de la pagina eventos */
+    .grid_ContainerEventos{
+    display: grid;
+    grid-template-rows:70px auto auto 70px;
+    grid-template-columns: auto auto ;
+    grid-template-areas:
+    "grid_EncabezadoEventos grid_EncabezadoEventos"
+    "principalEventos principalEventos"
+    "principalEventos principalEventos"
+    "footerEventos footerEventos"
+    
+}
+
 .formatoParrafo{
     margin-left: 10px;
     padding: 10px;
@@ -296,10 +331,14 @@ summary{
 
 }
 
+.footerEventos{
+    height: 120px;
+    margin-top: 10%;
+}
+
 .tImagen{
     width: 300px;
     height: 200px;
-    margin-bottom: 30px;
     object-fit: cover;/* La imagen va a ocupar todo el ancho y alto anteriormente especificado sin distorcionarse */
     margin: 10px;
     margin-bottom: 40px;
