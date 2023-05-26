@@ -118,13 +118,24 @@ section {
     justify-content: center;
     margin: 5%;
     flex-flow: row wrap; 
+    flex-wrap: wrap;
 }
+
+
 
 .tarjetas{
     padding: 2%;
+    display: flex;
+
 }
 
+@media (max-width: 1200px){
+    .tarjetas{
+        margin: 3%;
+        padding: 0%;
+    }
 
+    }
 
 @media (max-width: 480px){
     h1{justify-self: center;
@@ -186,9 +197,9 @@ form{
     color: white;
     background-color: rgb(38, 5, 70);
     border-radius: 5px;
-    padding: 20px;
+    padding: 60px;
     margin: 0 auto;
-    width: 300px;
+    width: 400px;
     margin-bottom: 100px;
 }
 
@@ -200,7 +211,7 @@ form{
 }
 
 .espacioFormulario{
-    margin: 10px;
+    margin: 20px;
 }
 
 .input{
@@ -235,18 +246,6 @@ form{
 
 
 /* Diseño de la pagina FAQ */
-.grid_ContainerFAQ{
-    display: grid;
-    grid-template-rows:70px auto auto 70px;
-    grid-template-columns: auto auto ;
-    grid-template-areas:
-    "grid_EncabezadoFAQ grid_EncabezadoFAQ"
-    "principalFAQ principalFAQ"
-    "principalFAQ principalFAQ"
-    "grid_Footer_FAQ"
-    ;
-
-}
 
 details{
     width: 400px;
@@ -264,18 +263,15 @@ details{
 
 .contenedor{
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     
 }
 
 .imagenPregunta{
-    max-width: 100%;
-    height: auto;
-    margin-left: 0%;
+
+    margin-left: 10%;
     padding-bottom: 50px;
-    display: flex;
-    flex-flow: row wrap;
-    width: auto;
-    object-fit: contain;
     
 }
 
@@ -312,17 +308,6 @@ summary{
 
 
 /* Diseño de la pagina eventos */
-    .grid_ContainerEventos{
-    display: grid;
-    grid-template-rows:70px auto auto 70px;
-    grid-template-columns: auto auto ;
-    grid-template-areas:
-    "grid_EncabezadoEventos grid_EncabezadoEventos"
-    "principalEventos principalEventos"
-    "principalEventos principalEventos"
-    "footerEventos footerEventos"
-    
-}
 
 .formatoParrafo{
     margin-left: 10px;
@@ -332,8 +317,8 @@ summary{
 }
 
 .footerEventos{
-    height: 120px;
-    margin-top: 10%;
+    height: 70px;
+    margin-top: 5%;
 }
 
 .tImagen{

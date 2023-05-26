@@ -108,12 +108,20 @@ section article p {
   justify-content: center;
   margin: 5%;
   flex-flow: row wrap;
+  flex-wrap: wrap;
 }
 
 .tarjetas {
   padding: 2%;
+  display: flex;
 }
 
+@media (max-width: 1200px) {
+  .tarjetas {
+    margin: 3%;
+    padding: 0%;
+  }
+}
 @media (max-width: 480px) {
   h1 {
     justify-self: center;
@@ -163,9 +171,9 @@ form {
   color: white;
   background-color: rgb(38, 5, 70);
   border-radius: 5px;
-  padding: 20px;
+  padding: 60px;
   margin: 0 auto;
-  width: 300px;
+  width: 400px;
   margin-bottom: 100px;
 }
 
@@ -177,7 +185,7 @@ form {
 }
 
 .espacioFormulario {
-  margin: 10px;
+  margin: 20px;
 }
 
 .input {
@@ -226,10 +234,12 @@ details {
 
 .contenedor {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .imagenPregunta {
-  margin-left: 20%;
+  margin-left: 10%;
   padding-bottom: 50px;
 }
 
@@ -265,10 +275,14 @@ summary {
   padding: 10px;
 }
 
+.footerEventos {
+  height: 70px;
+  margin-top: 5%;
+}
+
 .tImagen {
   width: 300px;
   height: 200px;
-  margin-bottom: 30px;
   object-fit: cover; /* La imagen va a ocupar todo el ancho y alto anteriormente especificado sin distorcionarse */
   margin: 10px;
   margin-bottom: 40px;
